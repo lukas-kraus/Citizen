@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class ComputerScienceStudent {
+public class ComputerScienceStudent implements Citizen {
 
     private String address;
     private int identityCardNumber;
@@ -13,6 +13,7 @@ public class ComputerScienceStudent {
         this.identityCardNumber = identityCardNumber;
     }
 
+    @Override
     public String getAddress() {
         return address;
     }
@@ -21,6 +22,7 @@ public class ComputerScienceStudent {
         this.address = address;
     }
 
+    @Override
     public int getIdentityCardNumber() {
         return identityCardNumber;
     }
@@ -40,5 +42,13 @@ public class ComputerScienceStudent {
     @Override
     public int hashCode() {
         return Objects.hash(address, identityCardNumber);
+    }
+
+    @Override
+    public String toString() {
+        return "ComputerScienceStudent{" +
+                "address='" + address + '\'' +
+                ", identityCardNumber=" + identityCardNumber +
+                '}';
     }
 }

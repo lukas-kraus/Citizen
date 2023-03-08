@@ -13,6 +13,7 @@ public class BiologyStudent implements Citizen {
         this.identityCardNumber = identityCardNumber;
     }
 
+    @Override
     public String getAddress() {
         return address;
     }
@@ -21,6 +22,7 @@ public class BiologyStudent implements Citizen {
         this.address = address;
     }
 
+    @Override
     public int getIdentityCardNumber() {
         return identityCardNumber;
     }
@@ -42,5 +44,11 @@ public class BiologyStudent implements Citizen {
         return Objects.hash(address, identityCardNumber);
     }
 
-
+    @Override
+    public String toString() {
+        return "BiologyStudent{" +
+                "address='" + address + '\'' +
+                ", identityCardNumber=" + identityCardNumber +
+                '}';
+    }
 }
