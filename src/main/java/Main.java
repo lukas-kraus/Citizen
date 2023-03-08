@@ -11,6 +11,5 @@ public class Main {
         System.out.println(personComputer2); // ComputerScieneStudent: Adresse Person 2
 
         Citizen testStudent = personBio1;
-
     }
 }

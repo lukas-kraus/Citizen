@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Student {
+public abstract class Student {
 
     protected String address;
     protected int identityCardNumber;
@@ -11,6 +11,8 @@ public class Student {
         this.address = address;
         this.identityCardNumber = identityCardNumber;
     }
+
+    public abstract void attendClass();
 
     public String getAddress() {
         return address;

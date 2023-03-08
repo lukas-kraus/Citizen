@@ -7,6 +7,11 @@ public class ComputerScienceStudent extends Student implements Citizen {
     public ComputerScienceStudent() {
     }
 
+    @Override
+    public void attendClass() {
+
+    }
+
     public ComputerScienceStudent(String address, int identityCardNumber, String os) {
         super(address, identityCardNumber);
         this.os = os;
