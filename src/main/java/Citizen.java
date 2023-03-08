@@ -1,7 +1,7 @@
 public interface Citizen {
 
-    public String getAddress();
+    String getAddress();
 
-    public int getIdentityCardNumber();
+    int getIdentityCardNumber();
 
 }
