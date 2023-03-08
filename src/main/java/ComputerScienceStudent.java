@@ -1,14 +1,14 @@
 import java.util.Objects;
 
-public class BiologyStudent implements Citizen {
+public class ComputerScienceStudent {
 
     private String address;
     private int identityCardNumber;
 
-    public BiologyStudent() {
+    public ComputerScienceStudent() {
     }
 
-    public BiologyStudent(String address, int identityCardNumber) {
+    public ComputerScienceStudent(String address, int identityCardNumber) {
         this.address = address;
         this.identityCardNumber = identityCardNumber;
     }
@@ -33,7 +33,7 @@ public class BiologyStudent implements Citizen {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BiologyStudent that = (BiologyStudent) o;
+        ComputerScienceStudent that = (ComputerScienceStudent) o;
         return identityCardNumber == that.identityCardNumber && Objects.equals(address, that.address);
     }
 
@@ -41,6 +41,4 @@ public class BiologyStudent implements Citizen {
     public int hashCode() {
         return Objects.hash(address, identityCardNumber);
     }
-
-
 }
